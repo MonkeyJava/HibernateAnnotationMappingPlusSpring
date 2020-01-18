@@ -49,11 +49,11 @@ public class Domain {
         projects.add(project);
         employee.setProjects(projects);
 
-        //addressService.add(address);
-        //employeeService.add(employee);
-        //projectService.add(project);
-        Address a = addressService.getById(1L);
-        System.out.println(a);
+        addressService.add(address);
+        employeeService.add(employee);
+
+        //Address a = addressService.getById(1L);
+        //System.out.println(a);
 
         HibernateUtil.shutdown();
 
