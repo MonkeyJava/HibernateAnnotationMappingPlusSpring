@@ -21,7 +21,7 @@ public class Employee {
     @Column(name = "BIRTHDAY")
     private Date birthday;
 
-    @OneToOne(cascade = CascadeType.ALL)
+    @OneToOne
     private Address address;
 
     @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
